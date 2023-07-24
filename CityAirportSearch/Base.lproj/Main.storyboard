@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Search Aiports View Controller-->
+        <!--Search City View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SearchAiportsViewController" customModule="CityAirportSearch" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchCityViewController" id="BYZ-38-t0r" customClass="SearchCityViewController" customModule="CityAirportSearch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,10 +27,6 @@
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="kMl-xN-gPS">
-                                        <rect key="frame" x="0.0" y="120" width="393" height="639"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                    </tableView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.45882352941176469" green="0.76078431372549016" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -40,17 +36,21 @@
                                     <constraint firstItem="0NI-Ub-F3W" firstAttribute="top" secondItem="mLa-0f-5v0" secondAttribute="top" constant="35" id="t15-fF-7WF"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="kMl-xN-gPS">
+                                <rect key="frame" x="0.0" y="179" width="393" height="639"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="kMl-xN-gPS" firstAttribute="top" secondItem="mLa-0f-5v0" secondAttribute="bottom" id="67f-Ou-Zsh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kMl-xN-gPS" secondAttribute="bottom" id="6w5-y0-hEm"/>
+                            <constraint firstItem="kMl-xN-gPS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9V0-O5-OH4"/>
+                            <constraint firstItem="kMl-xN-gPS" firstAttribute="top" secondItem="mLa-0f-5v0" secondAttribute="bottom" id="Hnr-1s-RgB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mLa-0f-5v0" secondAttribute="trailing" id="X6l-CF-YQH"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kMl-xN-gPS" secondAttribute="trailing" id="ZAi-FF-n3Z"/>
-                            <constraint firstItem="kMl-xN-gPS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eH9-Eu-sGx"/>
                             <constraint firstItem="mLa-0f-5v0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mIn-Gl-2Oh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kMl-xN-gPS" secondAttribute="trailing" id="nl0-Td-hyE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="mLa-0f-5v0" secondAttribute="top" id="s10-Ap-OLW"/>
-                            <constraint firstItem="kMl-xN-gPS" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="wCe-M4-Ovt"/>
                         </constraints>
                     </view>
                     <connections>
